@@ -1,16 +1,12 @@
 import TableSpecification from 'components/TableSpecification'
-
 import DeviceParameters from './data/DeviceParameters'
-
 import SmartCard from 'assets/image_products/icon_function/smartCard.png'
 import NFC from 'assets/image_products/icon_function/NFC.png'
 import Camera from 'assets/image_products/icon_function/Camera.png'
 import MRZ from 'assets/image_products/icon_function/MRZ.png'
 import imgProduct_SR from 'assets/image_products/check-id-sr/banner.png'
 import TabShowDevice from './tabShowDevice'
-
 import OtherProduct from 'components/otherProducts'
-
 import ButtonContact from 'layouts/buttons/ButtonContact'
 import DataGetSR from 'components/softwareInterface/DataGetSR'
 import MobileIDView from 'components/softwareInterface/mobileid'
