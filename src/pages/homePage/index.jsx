@@ -3,10 +3,10 @@ import CardGirl from 'assets/page_HomePage/cardCanCuoc/girlCard.webp'
 import Ekyc from 'assets/page_HomePage/kyc/ekyc.webp'
 import Kyc from 'assets/page_HomePage/kyc/kyc.webp'
 import QuyTrinhXacThuc from 'assets/page_HomePage/quytrinh.webp'
-import CallToAction from 'layout/callToAcction'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
 import BaoMat from 'assets/page_HomePage/baomat.webp'
 import OtherProduct from 'components/otherProducts'
+import DescribeTitle from 'layout/DescribeTitle'
+import CallToAction from 'layout/CallToAction'
 const Index = () => {
   return (
     <div className='overflow-hidden bg-gray-50'>
@@ -30,9 +30,9 @@ const Index = () => {
           </div>
 
           <div className='relative mb-10'>
-            <p className='text-xl md:text-3xl font-semibold mb-8 leading-relaxed max-w-4xl mx-auto'>
-              Độ chính xác <span className='font-bold text-cyan-300'>100%</span> với cơ sở dữ liệu
-              <span className='font-semibold text-yellow-300'> RAR-C06 </span>
+            <p className='text-xl md:text-3xl font-roboto mb-8 leading-relaxed max-w-4xl mx-auto'>
+              Độ chính xác <span className='font-roboto text-cyan-300'>100%</span> với cơ sở dữ liệu
+              <span className='font-roboto text-yellow-300'> RAR-C06 </span>
               từ Bộ Công An
             </p>
             {/* Đường gạch chân trang trí */}

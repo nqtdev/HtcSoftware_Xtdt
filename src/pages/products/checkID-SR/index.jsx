@@ -7,9 +7,11 @@ import MobileIDView from 'components/softwareInterface/MobileIdView'
 import DataGetSR from 'components/softwareInterface/DataGetSR'
 import FeaturesSection from 'components/FeaturesSection'
 import Features from './data/Features'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
+
 import ProductDescription from 'components/ProductDescription'
 import DataProductDescription from './data/ProductDescription'
+import CallToAction from 'layout/CallToAction'
+import DescribeTitle from 'layout/DescribeTitle'
 
 const CheckIdSr = () => {
   return (
@@ -97,6 +99,9 @@ const CheckIdSr = () => {
       {/* Xem thêm sản phẩm */}
       <section>
         <OtherProduct title='Xem thêm sản phẩm khác' />
+      </section>
+      <section>
+        <CallToAction />
       </section>
     </div>
   )

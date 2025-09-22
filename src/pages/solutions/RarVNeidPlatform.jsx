@@ -8,9 +8,10 @@ import IconNfc from 'assets/page_RarEkycPlatform/section_content_b/icon_nfc.png'
 import IconSdk from 'assets/page_RarEkycPlatform/section_content_b/icon_sdk.png'
 import IconApi from 'assets/page_RarEkycPlatform/section_content_b/icon_api.png'
 import Banner_CCDV from 'assets/page_RarEkycPlatform/section_content_b/banner_section.png'
+import DescribeTitle from 'layout/DescribeTitle'
+import CallToAction from 'layout/CallToAction'
 // import useCheckMobile from 'hooks/useCheckMobile'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
-import CallToAction from 'layout/callToAcction'
+
 const RarVNeidPlatform = () => {
   // const isMobile = useCheckMobile()
 

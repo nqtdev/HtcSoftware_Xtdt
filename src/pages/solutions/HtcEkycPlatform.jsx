@@ -16,12 +16,12 @@ import Number2 from 'assets/page_HtcEkycPlatform/number/number_2.webp'
 import Number3 from 'assets/page_HtcEkycPlatform/number/number_3.webp'
 import Number4 from 'assets/page_HtcEkycPlatform/number/number_4.webp'
 import Star from 'assets/page_HtcEkycPlatform/icon_star.webp'
+import DescribeTitle from 'layout/DescribeTitle'
+import CallToAction from 'layout/CallToAction'
 // import AOS from 'aos'
 // import 'aos/dist/aos.css'
 // import {useEffect} from 'react'
 // import useCheckMobile from 'hooks/useCheckMobile'
-import CallToAction from 'layout/callToAcction'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
 
 const HtcEkycPlatform = () => {
   // useEffect(() => {

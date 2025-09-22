@@ -1,4 +1,4 @@
-import DescribeTitle from 'layout/describeTitle/describeTitle'
+import DescribeTitle from 'layout/DescribeTitle'
 
 /* eslint-disable react/prop-types */
 const dataCard = [

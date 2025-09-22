@@ -19,7 +19,7 @@ import ImgMobiphonIt from 'assets/page_RarEkycPlatform/partner/mobilephoneit.svg
 import ImgMomo from 'assets/page_RarEkycPlatform/partner/momo.svg'
 import ImgNcb from 'assets/page_RarEkycPlatform/partner/ncb.svg'
 import ImgSmartpay from 'assets/page_RarEkycPlatform/partner/smartpay.svg'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
+import DescribeTitle from 'layout/DescribeTitle'
 
 const PartnerLogo = () => {
   const LogoSvg = [

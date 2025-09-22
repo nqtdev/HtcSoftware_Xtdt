@@ -10,10 +10,9 @@ import IconApi from 'assets/page_RarEkycPlatform/section_content_b/icon_api.png'
 import Banner_CCDV from 'assets/page_RarEkycPlatform/section_content_b/banner_section.png'
 import PartnerLogo from 'components/rarEkyc/PartnerLogo'
 import Certificate from 'components/rarEkyc/Certificate'
-
-import DescribeTitle from 'layout/describeTitle/describeTitle'
-import CallToAction from 'layout/callToAcction'
 import ButtonContact from 'layout/buttons/ButtonContact'
+import DescribeTitle from 'layout/DescribeTitle'
+import CallToAction from 'layout/CallToAction'
 
 const RarEkycPlatform = () => {
   // useEffect(() => {

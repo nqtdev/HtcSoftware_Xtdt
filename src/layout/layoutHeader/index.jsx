@@ -77,7 +77,7 @@ const HeaderWeb = () => {
     isActive ? 'text-purple-600' : 'text-gray-700 hover:text-purple-700'
 
   return (
-    <div className='mb-20'>
+    <div className='mb-16'>
       <header
         className={`fixed left-0 top-0 z-50 w-full transition-all duration-500 ${
           scrolled
@@ -87,7 +87,7 @@ const HeaderWeb = () => {
       >
         {/* <div className='absolute inset-0 bg-gradient-to-r from-purple-600/5 via-blue-600/5 to-indigo-600/5'></div> */}
         <nav className='relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-          <div className='flex items-center justify-between h-20'>
+          <div className='flex items-center justify-between h-16'>
             {/* Logo với NavLink */}
             <div className='flex-shrink-0 group'>
               <NavLink to='/' className='flex items-center space-x-3'>
@@ -96,7 +96,7 @@ const HeaderWeb = () => {
                   <img
                     src='/logo_sw.webp'
                     alt='HTC Software Logo'
-                    className='relative h-16 w-auto transform group-hover:scale-105 transition-transform duration-300'
+                    className='relative h-14 w-auto transform group-hover:scale-105 transition-transform duration-300'
                   />
                 </div>
               </NavLink>
@@ -116,11 +116,11 @@ const HeaderWeb = () => {
                   >
                     <div className='flex items-center space-x-2'>
                       <Icon
-                        size={16}
+                        size={14}
                         className={`transition-colors duration-300 ${navLinkStyle}`}
                       />
                       <span
-                        className={`text-sm font-medium transition-colors duration-300 ${navLinkStyle}`}
+                        className={`text-sm font-roboto transition-colors duration-300 ${navLinkStyle}`}
                       >
                         {item.name}
                       </span>
@@ -139,11 +139,11 @@ const HeaderWeb = () => {
                   className='group flex items-center space-x-2 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-white/10'
                 >
                   <Settings
-                    size={16}
+                    size={14}
                     className={`text-gray-600 group-hover:text-purple-600 transition-colors duration-300 ${location.pathname.startsWith('/solution') ? 'text-purple-600' : ''}`}
                   />
                   <span
-                    className={`text-sm font-medium transition-colors duration-300 ${location.pathname.startsWith('/solution') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
+                    className={`text-sm font-roboto transition-colors duration-300 ${location.pathname.startsWith('/solution') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
                   >
                     Giải Pháp
                   </span>
@@ -175,7 +175,7 @@ const HeaderWeb = () => {
                                 <Icon size={20} className='text-purple-600' />
                               </div>
                               <div>
-                                <div className='font-medium transition-colors duration-300 text-gray-900 group-hover:text-purple-700'>
+                                <div className='font-roboto transition-colors duration-300 text-gray-900 group-hover:text-purple-700'>
                                   {item.name}
                                 </div>
                                 <div className='text-sm text-gray-500 mt-1'>{item.desc}</div>
@@ -206,7 +206,7 @@ const HeaderWeb = () => {
                               </div>
                               <div>
                                 <div
-                                  className={`font-medium transition-colors duration-300 ${
+                                  className={`font-roboto transition-colors duration-300 ${
                                     location.pathname === item.href
                                       ? 'text-purple-700'
                                       : 'text-gray-900 group-hover:text-purple-700'
@@ -232,11 +232,11 @@ const HeaderWeb = () => {
                   className='group flex items-center space-x-2 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-white/10'
                 >
                   <Zap
-                    size={16}
+                    size={14}
                     className={`text-gray-600 group-hover:text-purple-600 transition-colors duration-300 ${location.pathname.startsWith('/products') ? 'text-purple-600' : ''}`}
                   />
                   <span
-                    className={`text-sm font-medium transition-colors duration-300 ${location.pathname.startsWith('/products') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
+                    className={`text-sm font-roboto transition-colors duration-300 ${location.pathname.startsWith('/products') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
                   >
                     Thiết Bị
                   </span>
@@ -266,7 +266,7 @@ const HeaderWeb = () => {
                           }
                         >
                           <div
-                            className={`font-medium transition-colors duration-300 ${
+                            className={`font-roboto transition-colors duration-300 ${
                               location.pathname === item.href
                                 ? 'text-purple-700'
                                 : 'text-gray-900 group-hover:text-purple-700'
@@ -327,7 +327,7 @@ const HeaderWeb = () => {
                           }`}
                         />
                         <span
-                          className={`font-medium transition-colors duration-300 ${
+                          className={`font-roboto transition-colors duration-300 ${
                             location.pathname === item.href
                               ? 'text-purple-700'
                               : 'text-gray-700 group-hover:text-purple-700'
@@ -355,7 +355,7 @@ const HeaderWeb = () => {
                           }`}
                         />
                         <span
-                          className={`font-medium ${
+                          className={`font-roboto ${
                             location.pathname.startsWith('/solution')
                               ? 'text-purple-700'
                               : 'text-gray-700'
@@ -421,7 +421,7 @@ const HeaderWeb = () => {
                           }`}
                         />
                         <span
-                          className={`font-medium ${
+                          className={`font-roboto ${
                             location.pathname.startsWith('/products')
                               ? 'text-purple-700'
                               : 'text-gray-700'
