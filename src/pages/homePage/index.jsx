@@ -21,9 +21,9 @@ const Index = () => {
         />
         <div className='relative z-10 text-center text-white px-4 max-w-4xl mx-auto'>
           <div className='mb-8 inline-block'>
-            <h1 className='text-4xl md:text-6xl font-bold mb-6 leading-tight tracking-tight'>
+            <h1 className='text-4xl md:text-6xl font-roboto font-bold mb-6 leading-tight tracking-tight'>
               Dịch Vụ Xác Thực
-              <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 py-2'>
+              <span className='block text-transparent font-roboto bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 py-2'>
                 Căn Cước Gắn Chip
               </span>
             </h1>
@@ -356,7 +356,7 @@ const Index = () => {
               <img src={Ekyc} alt='Quy trình eKYC hiện đại' className='rounded-lg w-full' />
             </div>
           </div>
-          <OtherProduct />
+          <OtherProduct title='Các sản phẩm đọc thẻ của chúng tôi' />
           <div className='bg-white p-8 rounded-2xl shadow-sm'>
             <DescribeTitle title='Ưu Điểm Vượt Trội Của eKYC' />
             <div className='flex flex-col lg:flex-row items-center gap-8'>
@@ -505,7 +505,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* CTA Section */}
       <CallToAction />
     </div>
   )
