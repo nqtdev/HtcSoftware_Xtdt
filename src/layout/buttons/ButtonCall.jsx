@@ -7,7 +7,7 @@ const ButtonCall = () => {
       className='button_call animate-wiggle-more animate-duration-[2000ms] animate-infinite animate-ease-in-out'
       onClick={() => window.open('tel:0848565555', '_self')}
     >
-      <img className='w-[70%] xl:w-[80%]' src={Call} alt='' />
+      <img className='w-[60%] xl:w-[70%]' src={Call} alt='' />
     </div>
   )
 }

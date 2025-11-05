@@ -5,7 +5,7 @@ const ButtonMail = ({emailAddress}) => {
   return (
     <div className='button_mail animate-bounce '>
       <a href={`mailto:${emailAddress}`}>
-        <img className='w-[70%] xl:w-[80%]' src={Mail} alt='' />
+        <img className='w-[60%] xl:w-[70%]' src={Mail} alt='' />
       </a>
     </div>
   )

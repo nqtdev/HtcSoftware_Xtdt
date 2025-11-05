@@ -15,7 +15,7 @@ import DescribeTitle from 'layout/DescribeTitle'
 
 const CheckIdSr = () => {
   return (
-    <div className='bg-gradient-to-br from-slate-50 to-blue-50'>
+    <div className='overflow-hidden'>
       {/* Banner sản phẩm  */}
       <section>
         <div className='relative min-h-[80vh] w-full overflow-hidden'>
@@ -73,33 +73,35 @@ const CheckIdSr = () => {
           </div>
         </div>
       </section>
-      {/* Xem thêm hình ảnh sản phẩm  */}
-      <section>
-        <div className='my-4 text-center'>
-          <DescribeTitle title='Hình ảnh sản phẩm' />
-        </div>
-        <div className='m-auto w-3/4'>
-          <TabShowDevice />
-        </div>
-        <ProductDescription data={DataProductDescription} />
-      </section>
-      <section>
-        <FeaturesSection dataFeatures={Features} />
-      </section>
-      <section>
-        <MobileIDView />
-      </section>
-      <section>
-        <DataGetSR />
-      </section>
-      {/* Thông số kỹ thuật thiết bị  */}
-      <section>
-        <TableSpecification data={DeviceParameters} />
-      </section>
-      {/* Xem thêm sản phẩm */}
-      <section>
-        <OtherProduct title='Xem thêm sản phẩm khác' />
-      </section>
+      <div className='max-w-7xl mx-auto'>
+        {/* Xem thêm hình ảnh sản phẩm  */}
+        <section>
+          <div className='my-4 text-center'>
+            <DescribeTitle title='Hình ảnh sản phẩm' />
+          </div>
+          <div className='m-auto w-3/4'>
+            <TabShowDevice />
+          </div>
+          <ProductDescription data={DataProductDescription} />
+        </section>
+        <section>
+          <FeaturesSection dataFeatures={Features} />
+        </section>
+        <section>
+          <MobileIDView />
+        </section>
+        <section>
+          <DataGetSR />
+        </section>
+        {/* Thông số kỹ thuật thiết bị  */}
+        <section>
+          <TableSpecification data={DeviceParameters} />
+        </section>
+        {/* Xem thêm sản phẩm */}
+        <section>
+          <OtherProduct title='Xem thêm sản phẩm khác' />
+        </section>
+      </div>
       <section>
         <CallToAction />
       </section>

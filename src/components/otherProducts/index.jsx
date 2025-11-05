@@ -56,10 +56,10 @@ function SlideSwiper({
 
                     {/* Content */}
                     <div className='flex flex-1 flex-col p-6'>
-                      <h4 className='text-xl font-bold text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
+                      <h4 className='text-xl font-roboto font-semibold text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
                         {item.slideName}
                       </h4>
-                      <p className='mt-3 flex-grow text-gray-600 line-clamp-2'>
+                      <p className='mt-3 flex-grow font-roboto text-gray-600 line-clamp-2'>
                         {item.slideDescription}
                       </p>
                     </div>

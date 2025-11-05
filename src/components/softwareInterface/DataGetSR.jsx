@@ -58,7 +58,7 @@ const DataGetSR = () => {
   )
 
   return (
-    <div className='py-12 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 min-h-screen'>
+    <div className='py-12 px-4  min-h-screen'>
       <div className='max-w-7xl mx-auto'>
         {/* Header */}
         <div className='text-center mb-12'>

@@ -1,6 +1,17 @@
 import {useState, useEffect} from 'react'
 import {NavLink, useLocation} from 'react-router-dom'
-import {ChevronDown, Menu, X, Zap, Shield, Settings, Home, Layers, ShieldCheck} from 'lucide-react'
+import {
+  ChevronDown,
+  Menu,
+  X,
+  Zap,
+  Shield,
+  Settings,
+  Home,
+  Layers,
+  ShieldCheck,
+  Newspaper,
+} from 'lucide-react'
 
 const HeaderWeb = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -33,13 +44,13 @@ const HeaderWeb = () => {
 
   const solutions = [
     {
-      name: 'RAR eKYC Platform',
+      name: 'RAR eKYC Platform - eID',
       href: '/solution/RarEkycPlatform',
       icon: Shield,
       desc: 'Định danh điện tử cho doanh nghiệp',
     },
     {
-      name: 'RAR VNeid Platform',
+      name: 'RAR VNeID Platform - VNeID',
       href: '/solution/RarVNeidPlatform',
       icon: ShieldCheck,
       desc: 'Định danh điện tử cho doanh nghiệp',
@@ -51,7 +62,7 @@ const HeaderWeb = () => {
       desc: 'Định danh điện tử cho doanh nghiệp',
     },
     {
-      name: 'IDpass',
+      name: 'ID-Pass',
       href: 'https://idpass.vn',
       external: true,
       icon: Layers,
@@ -68,7 +79,8 @@ const HeaderWeb = () => {
 
   const navItems = [
     {name: 'Trang Chủ', href: '/', icon: Home},
-    {name: 'NQ 57', href: '/nghiquyet-57', icon: Shield},
+    {name: 'Nghị Quyết 57', href: '/nghiquyet-57', icon: Shield},
+    {name: 'Tin Tức', href: '/tin-tuc', icon: Newspaper},
     {name: 'Mô Hình', href: '/mo-hinh', icon: Layers},
   ]
 
@@ -381,7 +393,7 @@ const HeaderWeb = () => {
                               href={item.href}
                               target='_blank'
                               rel='noopener noreferrer'
-                              className='block p-2 text-sm text-gray-600 hover:text-purple-600 transition-colors duration-300'
+                              className='block p-2 text-sm font-roboto text-gray-600 hover:text-purple-600 transition-colors duration-300'
                             >
                               {item.name}
                             </a>
@@ -390,7 +402,7 @@ const HeaderWeb = () => {
                               key={index}
                               to={item.href}
                               className={({isActive}) =>
-                                `block p-2 text-sm transition-colors duration-300 ${
+                                `block p-2 text-sm font-roboto transition-colors duration-300 ${
                                   isActive
                                     ? 'text-purple-600'
                                     : 'text-gray-600 hover:text-purple-600'

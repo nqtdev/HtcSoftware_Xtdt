@@ -26,7 +26,7 @@ const ScrollToTop = () => {
   return (
     <div className='button_scroll animate-fade-up animate-infinite animate-duration-[3000ms]'>
       {isVisible && (
-        <img onClick={scrollToTop} className='w-[70%] xl:w-[80%]' src={Scroll} alt='' />
+        <img onClick={scrollToTop} className='w-[60%] xl:w-[70%]' src={Scroll} alt='' />
       )}
     </div>
   )
