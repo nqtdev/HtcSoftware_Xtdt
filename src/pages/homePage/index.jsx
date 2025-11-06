@@ -64,7 +64,7 @@ const Index = () => {
       {/* CCCD Section */}
       <div className='container max-w-6xl m-auto'>
         {/* Giải pháp định danh  */}
-        <section className='py-20 px-4 md:px-8 '>
+        <section className='py-10 px-4 md:px-8 '>
           <Identifier />
           {/* Advantages Section */}
           {/* <div className='mb-16'>
@@ -110,7 +110,7 @@ const Index = () => {
                           </svg>
                         </div>
                         <div>
-                          <h4 className='font-semibold font-roboto text-gray-800 mb-1 text-lg'>
+                          <h4 className='font-semibold font-roboto text-gray-800 mb-1  '>
                             {advantage.title}
                           </h4>
                           <p className='text-gray-600 font-roboto'>{advantage.description}</p>
@@ -130,58 +130,63 @@ const Index = () => {
           <div>
             <DescribeTitle title='Tính đúng đắn của eKYC' />
             <div className='bg-white p-8 rounded-2xl shadow-sm border border-gray-100'>
-              <div className='flex flex-col lg:flex-row items-center gap-8'>
-                <div className='lg:w-1/2'>
+              <div className=' items-center gap-8'>
+                <div>
                   <div className='space-y-4'>
-                    <p className='text-gray-700 text-lg font-roboto'>
+                    <p className='text-gray-700   font-roboto'>
                       Mặc dù eKYC đã giúp rút ngắn quy trình, tăng độ chính xác và giảm chi phí,
                       song các giải pháp eKYC truyền thống vẫn phụ thuộc vào việc người dùng tự cung
                       cấp giấy tờ (CMND, CCCD bản chụp), và chỉ có thể đối chiếu thông tin bề mặt mà
                       không kiểm chứng được tính xác thực trong dữ liệu gốc của Nhà nước.
                     </p>
-                    <div className='space-y-3'>
-                      {[
-                        {
-                          title: 'Rủi ro bị mạo danh',
-                          description: 'Thông tin đăng ký dịch vụ có thể bị mạo danh bởi kẻ gian',
-                        },
-                        {
-                          title: 'Rủi ro xác thực giấy tờ',
-                          description:
-                            'Giấy tờ bị làm giả, khiến việc xác minh thông tin nhân thân, ảnh chụp không chính xác',
-                        },
-                        {
-                          title: 'Bảo mật thông tin',
-                          description:
-                            'Nguy cơ lộ thông tin cá nhân trong quá trình truyền tải dữ liệu',
-                        },
-                      ].map((risk, index) => (
-                        <div key={index} className='flex items-start'>
-                          <div className='bg-red-100 p-1 rounded-full mr-3 flex-shrink-0 mt-1'>
-                            <svg
-                              className='w-5 h-5 text-red-600'
-                              fill='none'
-                              stroke='currentColor'
-                              viewBox='0 0 24 24'
-                            >
-                              <path
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                strokeWidth='2'
-                                d='M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z'
-                              />
-                            </svg>
+                    <div className='lg:flex  justify-between items-center'>
+                      <div className='space-y-3'>
+                        {[
+                          {
+                            title: 'Rủi ro bị mạo danh',
+                            description: 'Thông tin đăng ký dịch vụ có thể bị mạo danh bởi kẻ gian',
+                          },
+                          {
+                            title: 'Rủi ro xác thực giấy tờ',
+                            description:
+                              'Giấy tờ bị làm giả, khiến việc xác minh thông tin nhân thân, ảnh chụp không chính xác',
+                          },
+                          {
+                            title: 'Bảo mật thông tin',
+                            description:
+                              'Nguy cơ lộ thông tin cá nhân trong quá trình truyền tải dữ liệu',
+                          },
+                        ].map((risk, index) => (
+                          <div key={index} className='flex items-start'>
+                            <div className='bg-red-100 p-1 rounded-full mr-3 flex-shrink-0 mt-1'>
+                              <svg
+                                className='w-5 h-5 text-red-600'
+                                fill='none'
+                                stroke='currentColor'
+                                viewBox='0 0 24 24'
+                              >
+                                <path
+                                  strokeLinecap='round'
+                                  strokeLinejoin='round'
+                                  strokeWidth='2'
+                                  d='M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z'
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <h4 className='font-semibold font-roboto text-gray-800 mb-1  '>
+                                {risk.title}
+                              </h4>
+                              <p className='text-gray-600 font-roboto'> -{risk.description}</p>
+                            </div>
                           </div>
-                          <div>
-                            <h4 className='font-semibold font-roboto text-gray-800 mb-1 text-lg'>
-                              {risk.title}
-                            </h4>
-                            <p className='text-gray-600 font-roboto'> -{risk.description}</p>
-                          </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
+                      <div className='lg:w-1/2'>
+                        <img src={MaoDanh} alt='Rủi ro mạo danh trong eKYC' className=' w-full ' />
+                      </div>
                     </div>
-                    <p className='text-gray-700 text-lg font-roboto'>
+                    <p className='text-blue-700 font-roboto'>
                       Do đó CCCD gắn chip ra đời cho phép Xác thực từ nguồn dữ liệu gốc (do Bộ Công
                       an cấp), đảm bảo độ tin cậy tuyệt đối. Loại bỏ hoàn toàn nguy cơ giả mạo giấy
                       tờ hoặc dùng ảnh, video giả. Hợp nhất dữ liệu định danh – sinh trắc học –
@@ -190,16 +195,13 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-                <div className='lg:w-1/2'>
-                  <img src={MaoDanh} alt='Rủi ro mạo danh trong eKYC' className=' w-full ' />
-                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Định nghĩa CCCD là gì  */}
-        <section className='py-20 px-4 md:px-8 '>
+        <section className='py-10 px-4 md:px-8 '>
           <div className='max-w-6xl mx-auto'>
             <DescribeTitle title='Hiểu Thêm Về Thẻ Căn Cước' />
             <div className='flex flex-col lg:flex-row items-center gap-10'>
@@ -207,7 +209,7 @@ const Index = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-8'>
                   <div className='bg-gray-100 p-6 rounded-xl shadow-sm transition-all duration-300 hover:shadow-md'>
                     <div className='text-blue-600 text-4xl font-bold mb-4'>01</div>
-                    <p className='text-gray-700 font-roboto text-lg'>
+                    <p className='text-gray-700 font-roboto  '>
                       Thẻ căn cước công dân gắn chip (e-ID) là loại giấy tờ tùy thân mới, thay thế
                       cho CMND cũ và thẻ CCCD mã vạch.
                     </p>
@@ -215,7 +217,7 @@ const Index = () => {
 
                   <div className='bg-gray-100 p-6 rounded-xl shadow-sm transition-all duration-300 hover:shadow-md'>
                     <div className='text-blue-600 text-4xl font-bold mb-4'>02</div>
-                    <p className='text-gray-700 font-roboto text-lg'>
+                    <p className='text-gray-700 font-roboto  '>
                       e-ID đóng vai trò như thiết bị nhận diện, xác thực danh tính và truy cập thông
                       tin công dân từ cơ sở dữ liệu quốc gia.
                     </p>
@@ -223,7 +225,7 @@ const Index = () => {
 
                   <div className='bg-gray-100 p-6 rounded-xl shadow-sm transition-all duration-300 hover:shadow-md'>
                     <div className='text-blue-600 text-4xl font-bold mb-4'>03</div>
-                    <p className='text-gray-700 font-roboto text-lg'>
+                    <p className='text-gray-700 font-roboto  '>
                       Theo Bộ Công an, hơn 90 triệu thẻ CCCD gắn chip đã được cấp phát (trên 101
                       triệu công dân đủ điều kiện).
                     </p>
@@ -231,7 +233,7 @@ const Index = () => {
 
                   <div className='bg-gray-100 p-6 rounded-xl shadow-sm transition-all duration-300 hover:shadow-md'>
                     <div className='text-blue-600 text-4xl font-bold mb-4'>04</div>
-                    <p className='text-gray-700 font-roboto text-lg'>
+                    <p className='text-gray-700 font-roboto  '>
                       Chip của thẻ CCCD gắn chip là loại NFC chip nên có thể đọc được dữ liệu chip
                       này bằng các thiết bị hỗ trợ NFC như Smartphone, đầu đọc thẻ NFC... chuyên
                       dụng
@@ -264,7 +266,7 @@ const Index = () => {
           </div>
         </section>
         {/* Tính bảo mật của CCCD  */}
-        <section className='py-20 px-4 md:px-8 '>
+        <section className='py-10 px-4 md:px-8 '>
           <div className='max-w-6xl mx-auto'>
             <DescribeTitle
               title={'Bảo Mật Dữ Liệu CCCD Gắn Chip'}
@@ -430,7 +432,7 @@ const Index = () => {
         </section>
         {/* Các trường thông tin của CCCD/Căn cước */}
 
-        <section className='py-20 px-4 md:px-8 '>
+        <section className='py-10 px-4 md:px-8 '>
           <div className='max-w-6xl mx-auto'>
             <DescribeTitle
               title={'Dữ liệu xác thực của Bộ Công an trong Căn cước/Căn cước công dân'}
@@ -466,14 +468,17 @@ const Index = () => {
 
                 <div className='space-y-3'>
                   {[
-                    'Họ, chữ đệm và tên khai sinh',
-                    'Số định danh cá nhân',
-                    'Quốc tịch',
-                    'Ngày, tháng, năm sinh',
+                    'Số căn cước',
+                    'Họ và tên',
+                    'Ngày sinh',
                     'Giới tính',
-                    'Ngày, tháng, năm hết hạn',
-                    'Quê quán',
-                    'Thông tin sinh trắc học về ảnh khuôn mặt',
+                    'Quốc tịch',
+                    'Nguyên quán',
+                    'Ngày hết hạn',
+                    'Số căn cước cũ',
+                    'Thường trú',
+                    'Mã MRZ CCCD',
+                    'Ảnh chân dung trong CCCD',
                   ].map((item, index) => (
                     <div
                       key={index}
@@ -484,7 +489,7 @@ const Index = () => {
                     </div>
                   ))}
                 </div>
-
+                {/*
                 <div className='mt-6 pt-6 border-t border-gray-200'>
                   <div className='flex items-center text-sm text-gray-600'>
                     <svg
@@ -502,7 +507,7 @@ const Index = () => {
                     </svg>
                     <span className='font-roboto'>8 loại thông tin định danh</span>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               {/* Thẻ Căn cước công dân */}
@@ -530,7 +535,7 @@ const Index = () => {
                   </div>
                 </div>
 
-                <div className='space-y-3 max-h-80 overflow-y-auto pr-4'>
+                <div className='space-y-3 overflow-y-auto pr-4'>
                   {[
                     'Số căn cước',
                     'Họ và tên',
@@ -538,17 +543,17 @@ const Index = () => {
                     'Giới tính',
                     'Quốc tịch',
                     'Nguyên quán',
-                    'Ngày cấp',
                     'Ngày hết hạn',
                     'Số căn cước cũ',
+                    'Thường trú',
+                    'Mã MRZ CCCD',
+                    'Ảnh Chân Dung Trong CCCD',
+                    'Ngày cấp',
                     'Dân tộc',
                     'Tôn giáo',
                     'Nhận dạng cá nhân',
-                    'Thường trú',
                     'Họ tên cha, mẹ',
                     'Họ tên vợ, chồng',
-                    'Mã MRZ CCCD',
-                    'Ảnh Chân Dung Trong CCCD',
                   ].map((item, index) => (
                     <div
                       key={index}
@@ -560,7 +565,7 @@ const Index = () => {
                   ))}
                 </div>
 
-                <div className='mt-6 pt-6 border-t border-gray-200'>
+                {/* <div className='mt-6 pt-6 border-t border-gray-200'>
                   <div className='flex items-center text-sm text-gray-600'>
                     <svg
                       className='w-4 h-4 mr-2 text-green-600'
@@ -577,7 +582,7 @@ const Index = () => {
                     </svg>
                     <span className='font-roboto'>17 loại thông tin định danh</span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

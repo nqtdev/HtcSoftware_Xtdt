@@ -212,7 +212,7 @@ const HtcEkycPlatform = () => {
       </section>
 
       {/* HTC eKYC Platform mang lại */}
-      <section className='py-20 px-4 bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden'>
+      <section className='py-10 px-4 bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden'>
         <div className='container mx-auto max-w-6xl'>
           <DescribeTitle
             title={'Các dịch vụ chính'}

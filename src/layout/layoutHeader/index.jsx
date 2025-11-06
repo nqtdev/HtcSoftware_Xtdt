@@ -89,7 +89,7 @@ const HeaderWeb = () => {
     isActive ? 'text-purple-600' : 'text-gray-700 hover:text-purple-700'
 
   return (
-    <div className='mb-16'>
+    <div className='mb-14'>
       <header
         className={`fixed left-0 top-0 z-50 w-full transition-all duration-500 ${
           scrolled
@@ -99,7 +99,7 @@ const HeaderWeb = () => {
       >
         {/* <div className='absolute inset-0 bg-gradient-to-r from-purple-600/5 via-blue-600/5 to-indigo-600/5'></div> */}
         <nav className='relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-          <div className='flex items-center justify-between h-16'>
+          <div className='flex items-center justify-between h-14'>
             {/* Logo với NavLink */}
             <div className='flex-shrink-0 group'>
               <NavLink to='/' className='flex items-center space-x-3'>
@@ -108,7 +108,7 @@ const HeaderWeb = () => {
                   <img
                     src='/logo_sw.webp'
                     alt='HTC Software Logo'
-                    className='relative h-14 w-auto transform group-hover:scale-105 transition-transform duration-300'
+                    className='relative h-12 w-auto transform group-hover:scale-105 transition-transform duration-300'
                   />
                 </div>
               </NavLink>

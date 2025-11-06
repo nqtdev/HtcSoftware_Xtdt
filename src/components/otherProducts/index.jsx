@@ -21,7 +21,7 @@ function SlideSwiper({
   swiperConfig = {freeMode: true},
 }) {
   return (
-    <section className='relative overflow-x-hidden py-16 px-4' aria-label={title}>
+    <section className='relative overflow-x-hidden py-16 px-4 overflow-hidden' aria-label={title}>
       {/* Decor blobs: nằm TRƯỚC để không đè nội dung, và được clip bởi overflow-hidden của section */}
       <div className='pointer-events-none absolute inset-0 overflow-hidden -z-10'>
         <div className='absolute left-0 -bottom-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply blur-xl opacity-30 animate-blob' />

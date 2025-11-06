@@ -5,6 +5,7 @@ import DieuKien from 'assets/page_RarVNeidPlatform/dieukiensudung.webp'
 import {useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import {Image} from 'antd'
 
 const RarVNeidPlatform = () => {
   useEffect(() => {
@@ -65,7 +66,7 @@ const RarVNeidPlatform = () => {
       </section>
 
       {/* Services Section */}
-      <section className='py-20 px-4 '>
+      <section className='py-10 px-4 '>
         <div className='container mx-auto max-w-6xl'>
           <DescribeTitle
             title='Các dịch vụ RAR đang cung cấp'
@@ -150,12 +151,12 @@ const RarVNeidPlatform = () => {
       </section>
 
       {/* Conditions Section */}
-      <section className='py-20 px-4 '>
+      <section className='py-10 px-4 '>
         <div className='container mx-auto max-w-6xl'>
           <DescribeTitle title='Điều kiện kết nối sử dụng dịch vụ' data-aos='fade-up' />
           <div className='mt-12' data-aos='zoom-in' data-aos-delay='300'>
-            <img
-              className='w-5/6 m-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-700'
+            <Image
+              className='w-full m-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-700'
               src={DieuKien}
               alt='Điều kiện kết nối sử dụng dịch vụ'
             />
@@ -164,7 +165,7 @@ const RarVNeidPlatform = () => {
       </section>
 
       {/* HTC Services Section */}
-      <section className='py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50'>
+      <section className='py-10 px-4 bg-gradient-to-br from-gray-50 to-blue-50'>
         <div className='container mx-auto max-w-6xl'>
           <div className='mt-16'>
             {/* Main Highlight Card */}
