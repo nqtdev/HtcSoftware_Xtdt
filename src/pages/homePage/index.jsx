@@ -3,7 +3,6 @@ import CardGirl from 'assets/page_HomePage/cardCanCuoc/girlCard.webp'
 import BaoMat from 'assets/page_HomePage/baomat.webp'
 import DescribeTitle from 'layout/DescribeTitle'
 import CallToAction from 'layout/CallToAction'
-// import QuyTrinhXacThuc from 'assets/page_HomePage/quytrinh.webp'
 import MaoDanh from 'assets/page_HomePage/kyc/maodanh.webp'
 import OtherProduct from 'components/otherProducts'
 import Identifier from './components/identifier'
@@ -31,11 +30,6 @@ const Index = () => {
           </div>
 
           <div className='relative mb-10'>
-            <p className='text-xl md:text-3xl font-roboto mb-8 leading-relaxed max-w-4xl mx-auto'>
-              Độ chính xác <span className='font-roboto text-cyan-300'>100%</span> với cơ sở dữ liệu
-              <span className='font-roboto text-yellow-300'> RAR-C06 </span>
-              từ Bộ Công An
-            </p>
             {/* Đường gạch chân trang trí */}
             <div className='absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full'></div>
           </div>
@@ -66,67 +60,6 @@ const Index = () => {
         {/* Giải pháp định danh  */}
         <section className='py-10 px-4 md:px-8 '>
           <Identifier />
-          {/* Advantages Section */}
-          {/* <div className='mb-16'>
-            <DescribeTitle title='Ưu Điểm Của eKYC' />
-            <div className='bg-white p-8 rounded-2xl shadow-sm border border-gray-100'>
-              <div className='flex flex-col lg:flex-row items-center gap-8'>
-                <div className='lg:w-1/2'>
-                  <div className='space-y-6'>
-                    {[
-                      {
-                        title: 'Tốc độ vượt trội',
-                        description: 'Quy trình xác thực nhanh chóng, tiện lợi cho người dùng',
-                      },
-                      {
-                        title: 'Tiết kiệm chi phí',
-                        description:
-                          'Giảm thiểu nhân sự, giấy tờ và thời gian xử lý cho doanh nghiệp',
-                      },
-                      {
-                        title: 'Phủ sóng toàn quốc',
-                        description:
-                          'Tiếp cận người dùng ở vùng sâu, vùng xa thông qua xác thực trực tuyến',
-                      },
-                      {
-                        title: 'Hạn chế sai sót',
-                        description: 'Giảm thiểu lỗi trong quá trình nhập liệu thủ công',
-                      },
-                    ].map((advantage, index) => (
-                      <div key={index} className='flex items-start'>
-                        <div className='bg-blue-100 p-2 rounded-full mr-4 flex-shrink-0 mt-1'>
-                          <svg
-                            className='w-5 h-5 text-blue-600'
-                            fill='none'
-                            stroke='currentColor'
-                            viewBox='0 0 24 24'
-                          >
-                            <path
-                              strokeLinecap='round'
-                              strokeLinejoin='round'
-                              strokeWidth='2'
-                              d='M5 13l4 4L19 7'
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h4 className='font-semibold font-roboto text-gray-800 mb-1  '>
-                            {advantage.title}
-                          </h4>
-                          <p className='text-gray-600 font-roboto'>{advantage.description}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className='lg:w-1/2'>
-                  <img src={QuyTrinhXacThuc} alt='Quy trình xác thực eKYC' className=' w-full' />
-                </div>
-              </div>
-            </div>
-          </div> */}
-
-          {/* Accuracy Section */}
           <div>
             <DescribeTitle title='Tính đúng đắn của eKYC' />
             <div className='bg-white p-8 rounded-2xl shadow-sm border border-gray-100'>
@@ -425,7 +358,7 @@ const Index = () => {
             </div>
           </div>
         </section>
-        <OtherProduct title='Các sản phẩm đọc thẻ của chúng tôi' />
+        <OtherProduct title='Các sản phẩm hỗ trợ đọc thẻ hiện nay' />
         {/* Bộ giải pháp của HTC  */}
         <section className='py-16 px-4 md:px-8 '>
           <Solution />

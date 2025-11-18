@@ -6,18 +6,24 @@ const Solution = () => {
         <h2 className='text-3xl md:text-4xl font-bold text-blue-800 mb-6 leading-tight font-lora'>
           Bộ Giải Pháp eKYC 2.0 Kết Nối Trực Tiếp Với Bộ Công An
         </h2>
-        <p className='text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-roboto'>
-          Xác thực CCCD gắn chip (IDCheck/eID Authentication) không chỉ là “một phiên bản nâng cấp
-          của eKYC”, mà là nền tảng xác thực quốc gia, đóng vai trò xương sống cho hệ thống định
-          danh số Việt Nam trong kỷ nguyên chuyển đổi số.
-        </p>
+        <span className='text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-roboto'>
+          Từ tình hình trên,{' '}
+          <a href='https://www.htcsoftware.vn/'>
+            <span className='text-blue-800 font-bold uppercase'>
+              Công ty Cổ Phần Giải Pháp Phần Mềm HTC
+            </span>
+          </a>{' '}
+          ra mắt bộ giải pháp Xác thực CCCD gắn chip (IDCheck/eID Authentication) không chỉ là “một
+          phiên bản nâng cấp của eKYC”, mà là nền tảng xác thực quốc gia, đóng vai trò xương sống
+          cho hệ thống định danh số Việt Nam trong kỷ nguyên chuyển đổi số.
+        </span>
       </div>
 
       {/* Solutions Grid */}
       <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-6'>
         {/* Solution 1 */}
         <a
-          href='/Solution/RarEkycPlatform'
+          href='https://www.htcsoftware.vn/solution/RarEkycPlatform'
           target='_blank'
           rel='noopener noreferrer'
           className='block bg-white rounded-2xl p-6 shadow-sm border border-blue-100 hover:shadow-lg transition-all duration-300 hover:border-blue-200 group hover:scale-105'
@@ -75,7 +81,9 @@ const Solution = () => {
 
         {/* Solution 2 */}
         <a
-          href='/Solution/RarVNeidPlatform'
+          href='https://www.htcsoftware.vn/solution/RarVNeidPlatform'
+          target='_blank'
+          rel='noopener noreferrer'
           className='block bg-white rounded-2xl p-6 shadow-sm border border-green-100 hover:shadow-lg transition-all duration-300 hover:border-green-200 group hover:scale-105'
         >
           <div className='flex items-start mb-4'>
@@ -130,7 +138,9 @@ const Solution = () => {
 
         {/* Solution 3 */}
         <a
-          href='/Solution/HtcEkycPlatform'
+          href='https://www.htcsoftware.vn/solution/HtcEkycPlatform'
+          target='_blank'
+          rel='noopener noreferrer'
           className='block bg-white rounded-2xl p-6 shadow-sm border border-purple-100 hover:shadow-lg transition-all duration-300 hover:border-purple-200 group hover:scale-105'
         >
           <div className='flex items-start mb-4'>
@@ -183,7 +193,9 @@ const Solution = () => {
 
         {/* Solution 4 */}
         <a
-          href='/Solution/HtcEkycPlatform'
+          href='https://idpass.vn/'
+          target='_blank'
+          rel='noopener noreferrer'
           className='block bg-white rounded-2xl p-6 shadow-sm border border-orange-100 hover:shadow-lg transition-all duration-300 hover:border-orange-200 group hover:scale-105'
         >
           <div className='flex items-start mb-4'>

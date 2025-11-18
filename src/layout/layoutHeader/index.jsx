@@ -1,28 +1,28 @@
 import {useState, useEffect} from 'react'
 import {NavLink, useLocation} from 'react-router-dom'
 import {
-  ChevronDown,
+  // ChevronDown,
   Menu,
   X,
-  Zap,
+  // Zap,
   Shield,
-  Settings,
+  // Settings,
   Home,
   Layers,
-  ShieldCheck,
+  // ShieldCheck,
   Newspaper,
 } from 'lucide-react'
 
 const HeaderWeb = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [activeDropdown, setActiveDropdown] = useState(null)
+  // const [activeDropdown, setActiveDropdown] = useState(null)
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
 
   // Đóng menu khi route thay đổi
   useEffect(() => {
     setIsOpen(false)
-    setActiveDropdown(null)
+    // setActiveDropdown(null)
   }, [location])
 
   useEffect(() => {
@@ -35,47 +35,47 @@ const HeaderWeb = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
-    setActiveDropdown(null)
+    // setActiveDropdown(null)
   }
 
-  const toggleDropdown = dropdown => {
-    setActiveDropdown(activeDropdown === dropdown ? null : dropdown)
-  }
+  // const toggleDropdown = dropdown => {
+  //   setActiveDropdown(activeDropdown === dropdown ? null : dropdown)
+  // }
 
-  const solutions = [
-    {
-      name: 'RAR eKYC Platform - eID',
-      href: '/solution/RarEkycPlatform',
-      icon: Shield,
-      desc: 'Định danh điện tử cho doanh nghiệp',
-    },
-    {
-      name: 'RAR VNeID Platform - VNeID',
-      href: '/solution/RarVNeidPlatform',
-      icon: ShieldCheck,
-      desc: 'Định danh điện tử cho doanh nghiệp',
-    },
-    {
-      name: 'HTC eKYC Platform',
-      href: '/solution/HtcEkycPlatform',
-      icon: Zap,
-      desc: 'Định danh điện tử cho doanh nghiệp',
-    },
-    {
-      name: 'ID-Pass',
-      href: 'https://idpass.vn',
-      external: true,
-      icon: Layers,
-      desc: 'Định danh điện tử cho doanh nghiệp',
-    },
-  ]
+  // const solutions = [
+  //   {
+  //     name: 'RAR eKYC Platform - eID',
+  //     href: '/solution/RarEkycPlatform',
+  //     icon: Shield,
+  //     desc: 'Định danh điện tử cho doanh nghiệp',
+  //   },
+  //   {
+  //     name: 'RAR VNeID Platform - VNeID',
+  //     href: '/solution/RarVNeidPlatform',
+  //     icon: ShieldCheck,
+  //     desc: 'Định danh điện tử cho doanh nghiệp',
+  //   },
+  //   {
+  //     name: 'HTC eKYC Platform',
+  //     href: '/solution/HtcEkycPlatform',
+  //     icon: Zap,
+  //     desc: 'Định danh điện tử cho doanh nghiệp',
+  //   },
+  //   {
+  //     name: 'ID-Pass',
+  //     href: 'https://idpass.vn',
+  //     external: true,
+  //     icon: Layers,
+  //     desc: 'Định danh điện tử cho doanh nghiệp',
+  //   },
+  // ]
 
-  const devices = [
-    {name: 'CheckID-SR', href: '/products/checkID-SR', category: 'Thiết bị đọc thẻ'},
-    {name: 'CheckID-ET100', href: '/products/checkID-ET100', category: 'Thiết bị đọc thẻ'},
-    {name: 'CheckID-R301', href: '/products/checkID-R301', category: 'Thiết bị đọc thẻ'},
-    {name: 'CheckID-HN212', href: '/products/checkID-HN212', category: 'Thiết bị đọc thẻ'},
-  ]
+  // const devices = [
+  //   {name: 'CheckID-SR', href: '/products/checkID-SR', category: 'Thiết bị đọc thẻ'},
+  //   {name: 'CheckID-ET100', href: '/products/checkID-ET100', category: 'Thiết bị đọc thẻ'},
+  //   {name: 'CheckID-R301', href: '/products/checkID-R301', category: 'Thiết bị đọc thẻ'},
+  //   {name: 'CheckID-HN212', href: '/products/checkID-HN212', category: 'Thiết bị đọc thẻ'},
+  // ]
 
   const navItems = [
     {name: 'Trang Chủ', href: '/', icon: Home},
@@ -145,7 +145,7 @@ const HeaderWeb = () => {
               })}
 
               {/* Solutions Mega Menu */}
-              <div className='relative'>
+              {/* <div className='relative'>
                 <button
                   onClick={() => toggleDropdown('solutions')}
                   className='group flex items-center space-x-2 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-white/10'
@@ -235,10 +235,10 @@ const HeaderWeb = () => {
                     </div>
                   </div>
                 )}
-              </div>
+              </div> */}
 
               {/* Devices Grid Menu */}
-              <div className='relative'>
+              {/* <div className='relative'>
                 <button
                   onClick={() => toggleDropdown('devices')}
                   className='group flex items-center space-x-2 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-white/10'
@@ -292,7 +292,7 @@ const HeaderWeb = () => {
                     </div>
                   </div>
                 )}
-              </div>
+              </div> */}
             </div>
 
             {/* Floating Mobile Menu Button */}
@@ -352,7 +352,7 @@ const HeaderWeb = () => {
                   })}
 
                   {/* Mobile Solutions */}
-                  <div className='border-t border-gray-100 pt-4'>
+                  {/* <div className='border-t border-gray-100 pt-4'>
                     <button
                       onClick={() => toggleDropdown('solutions')}
                       className='w-full flex items-center justify-between p-3 rounded-xl hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50 transition-all duration-300'
@@ -415,10 +415,10 @@ const HeaderWeb = () => {
                         )}
                       </div>
                     )}
-                  </div>
+                  </div> */}
 
                   {/* Mobile Devices */}
-                  <div>
+                  {/* <div>
                     <button
                       onClick={() => toggleDropdown('devices')}
                       className='w-full flex items-center justify-between p-3 rounded-xl hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50 transition-all duration-300'
@@ -467,7 +467,7 @@ const HeaderWeb = () => {
                         ))}
                       </div>
                     )}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
